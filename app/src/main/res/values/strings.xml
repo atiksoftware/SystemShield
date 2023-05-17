@@ -1,30 +1,32 @@
 <resources>
-    <string name="app_name">System Shield</string>
-    <string name="scan">SCAN</string>
-    <string name="viruce_and_privacy">Viruce &amp; Privacy</string>
+    <string name="app_name" translatable="false">System Shield</string>
 
-    <string name="starting">Starting…</string>
-    <string name="starting_desc">SystemShield is starting.</string>
+    <string name="license_title">License Key</string>
+    <string name="license_desc">Enter your license key to activate System Shield. You can find your license code on the platform you purchased it from or in your e-mail address. It must be communicated to you within 8 hours at the latest after the purchase is made.</string>
+    <string name="license_key_input_label">License Key:</string>
+    <string name="license_button_check">CHECK LICENSE KEY</string>
+    <string name="license_button_checking">CHECKING…</string>
+    <string name="license_license_key_valid">License key is valid. System Shield is activated.</string>
+    <string name="license_license_key_invalid">License key is invalid. Please check your license key.</string>
 
-    <string name="scanning">Scanning…</string>
-    <string name="scanning_desc">%1$d/%2$d app scanned</string>
-    <string name="scanning_app_name">com.android.app</string>
+    <string name="scanner_scan" translatable="false">SCAN</string>
+    <string name="scanner_viruce_and_privacy" translatable="false">Viruce &amp; Privacy</string>
 
-    <string name="scanned">Scanned</string>
-    <string name="scanned_desc">SystemShield has scanned %1$d apps.\n%2$d apps are safe.\nNothing suspicious was found.</string>
+    <string name="scanner_risk_alert_title">Your device is at risk!</string>
+    <string name="scanner_risk_alert_decs">The security system cannot warn you of virus threats because notification access is not allowed.\nActivate the notification permission to receive notifications of possible virus threats and to be protected from dangers.</string>
+    <string name="scanner_notification_active_button_text">Activate Notification Permission</string>
+    
+    <string name="scanner_scan_title">Scan System</string>
+    <string name="scanner_scan_desc">System Shield scans your device for viruses and threats.\nIt also checks your privacy settings and warns you if there is a problem.</string>
+    <string name="scanner_scan_start_button_text">START SCAN</string>
 
-    <string name="secret_activity">Secret Activity</string>
-    <string name="notification_permission">Notification Permission</string>
-    <string name="notification_permission_desc">SystemShield needs notification permission to scan apps in the background.</string>
-    <string name="notification_permission_yes">Yes. Permission granted.</string>
-    <string name="notification_permission_no">No. Permission denied.</string>
-    <string name="get_notification_permission">GET NOTIFICATION PERMISSION</string>
+    <string name="scanner_scanning_title">Scanning</string>
+    <string name="scanner_scanning_percent">Scanning %1$d/%2$d</string>
+    <string name="scanner_scanning_app_name" translatable="false">%1$s</string>
 
-    <string name="api_server">API Server</string>
-    <string name="url_hint">URL. e.g. https://example.com</string>
-    <string name="check_api_server_url">CHECK API SERVER URL</string>
+    <string name="scanner_scanned_title">Scanned</string>
+    <string name="scanner_scanned_desc">System Shield has scanned %1$d apps. You are safe. Nothing suspicious was found.</string>
 
-    <string name="hide_app_icon">HIDE APP ICON</string>
 
 
 </resources>

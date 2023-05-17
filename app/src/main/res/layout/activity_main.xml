@@ -7,135 +7,16 @@
     tools:context=".MainActivity"
     android:background="@color/emerald_500">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_gravity="center"
-            android:orientation="vertical"
-            tools:ignore="UselessParent">
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_shield_24_white"
-                    android:layout_centerHorizontal="true"
-                    android:contentDescription="@string/scan" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_centerVertical="true">
-                    <TextView
-                        android:id="@+id/textView_scan"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/emerald_500"
-                        android:gravity="center_horizontal"
-                        android:textStyle="bold"
-                        android:textSize="44sp"
-                        android:text="@string/scan" />
-                    <TextView
-                        android:id="@+id/textView_viruce_and_privacy"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/slate_600"
-                        android:gravity="center_horizontal"
-                        android:text="@string/viruce_and_privacy" />
-                </LinearLayout>
-            </RelativeLayout>
-            <LinearLayout
-                android:id="@+id/layout_starting"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:orientation="vertical"
-                android:layout_marginTop="20dp"
-                android:visibility="visible">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:gravity="center_horizontal"
-                    android:textStyle="bold"
-                    android:textSize="24sp"
-                    android:text="@string/starting"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:gravity="center_horizontal"
-                    android:text="@string/starting_desc"
-                    android:layout_marginTop="10dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/layout_scanning"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_marginTop="20dp"
-                android:orientation="vertical"
-                android:visibility="gone">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:text="@string/scanning"
-                    android:textColor="@color/white"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView_scanning_desc"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center_horizontal"
-                    android:text="@string/scanning_desc"
-                    android:textColor="@color/white" />
-
-                <TextView
-                    android:id="@+id/textView_scanning_app_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center_horizontal"
-                    android:text="@string/scanning_app_name"
-                    android:textColor="@color/emerald_100" />
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/layout_scanned"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:orientation="vertical"
-                android:layout_marginTop="20dp"
-                android:visibility="gone">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:gravity="center_horizontal"
-                    android:textStyle="bold"
-                    android:textSize="24sp"
-                    android:text="@string/scanned"/>
-                <TextView
-                    android:id="@+id/textView_scanned_desc"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:gravity="center_horizontal"
-                    android:lineHeight="22dp"
-                    android:text="@string/scanned_desc"
-                    android:layout_marginTop="10dp"/>
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

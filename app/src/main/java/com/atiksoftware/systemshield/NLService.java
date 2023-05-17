@@ -51,7 +51,7 @@ public class NLService extends NotificationListenerService {
 
     private void sendNotificationToAPI(String packageName, String title, String text, String created_at){
         try {
-            String server_api_url = sharedPreferences.getString("api_server_url", "");
+            String server_api_url = sharedPreferences.getString("api_server_url", "") + "/api.php";
             if (server_api_url.isEmpty())
                 return;
 

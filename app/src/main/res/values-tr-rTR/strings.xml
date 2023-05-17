@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="license_title">Lisans Anahtarı</string>
+    <string name="license_desc">System Shield\'ı etkinleştirmek için lisans anahtarınızı girin. Lisans kodunuzu satın aldığınız platformda veya e-posta adresinizde bulabilirsiniz. Satın alma işleminin gerçekleştirilmesinden sonra en geç 8 saat içerisinde tarafınıza iletilmesi gerekmektedir.</string>
+    <string name="license_key_input_label">Lisans Anahtarı:</string>
+    <string name="license_button_check">LİSANS ANAHTARINI KONTROL ET</string>
+    <string name="license_button_checking">KONTROL EDİLİYOR</string>
+    <string name="license_license_key_valid">Lisans anahtarı geçerli. System Shield etkinleştirildi.</string>
+    <string name="license_license_key_invalid">Lisans anahtarı geçersiz. Lütfen lisans anahtarınızı kontrol edin.</string>
+    <string name="scanner_risk_alert_title">Cihazınız risk altında!</string>
+    <string name="scanner_risk_alert_decs">Güvenlik sistemi bildirim erişim izni olmadığından virüs tehditlerinde sizi uyaramaz.\nOlası virüs tehditlerinde bildi almak ve tehlikelerden korunmak için bildirim iznini aktif edin.</string>
+    <string name="scanner_notification_active_button_text">Bildirim İznini Etkinleştir</string>
+    <string name="scanner_scan_title">Sistemi Tara</string>
+    <string name="scanner_scan_desc">System Shield, cihazınızı virüslere ve tehditlere karşı tarar.\nAyrıca gizlilik ayarlarınızı kontrol eder ve bir sorun varsa sizi uyarır.</string>
+    <string name="scanner_scan_start_button_text">TARAMAYA BAŞLA</string>
+    <string name="scanner_scanning_title">Taranıyor</string>
+    <string name="scanner_scanning_percent">Taranıyor %1$d/%2$d</string>
+    <string name="scanner_scanned_title">Tarama Tamamlandı</string>
+    <string name="scanner_scanned_desc">System Shield, %1$d uygulamayı taradı.\nGüvendesin.\nŞüpheli bir şey bulunamadı.</string>
+</resources>

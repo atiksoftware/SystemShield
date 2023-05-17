@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScannerActivity"
+    android:id="@+id/layout_scanner"
+    android:background="@color/emerald_500"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_shield_24_white"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/scanner_scan" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+                <TextView
+                    android:id="@+id/textView_scan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/emerald_500"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="44sp"
+                    android:text="@string/scanner_scan" />
+                <TextView
+                    android:id="@+id/textView_viruce_and_privacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/slate_600"
+                    android:gravity="center_horizontal"
+                    android:text="@string/scanner_viruce_and_privacy" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_risk_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:visibility="visible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:text="@string/scanner_risk_alert_title" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:text="@string/scanner_risk_alert_decs" />
+            <Button
+                android:id="@+id/button_scanner_notification_active"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/scanner_notification_active_button_text"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_start_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:text="@string/scanner_scan_title" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:text="@string/scanner_scan_desc" />
+            <Button
+                android:id="@+id/button_scanner_scan_start"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/scanner_scan_start_button_text"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_scanning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:text="@string/scanner_scanning_title" />
+            <TextView
+                android:id="@+id/textView_scanner_scanning_percent"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:text="@string/scanner_scanning_percent" />
+            <TextView
+                android:id="@+id/textView_scanner_scanning_app_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:text="@string/scanner_scanning_app_name" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_scanned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:text="@string/scanner_scanned_title" />
+            <TextView
+                android:id="@+id/textView_scanner_scanned_desc"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:text="@string/scanner_scanned_desc" />
+        </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
